@@ -448,7 +448,7 @@ Page({
     this.subscribeEvents();
     await this.client.init(APPID)
     await this.client.setRole(this.role)
-    await this.client.join(undefined, channel, uid)
+    await this.client.join('22f1f9c5b14f41c39a4001effd1654ba', channel, uid)
     let url = ''
     if (this.isBroadcaster()) {
       url = await this.client.publish(url);
